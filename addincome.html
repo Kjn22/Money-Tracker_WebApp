@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashMate-Add Income</title>
+    <link rel="stylesheet" href="static/style2.css">
+</head>
+
+<body>
+    <form action="/addincome" method="post">
+        <div class="completeForm">
+            <div class="form-group">
+                <span class="types">Amount:</span><input type="number" name="amount"
+                    placeholder="Enter The Amount(In Rs.)" pattern="[0-9]+(\.[0-9]+)?" title="Enter Positive Amount"
+                    required>
+            </div>
+            <div class="form-group">
+                <span class="types">Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="date" name="date"
+                    placeholder="Enter Date" required>
+            </div>
+            <div class="form-group">
+                <span class="types">Income Source:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><select name="source">
+                    <option value="Salary">Salary</option>
+                    <option value="Freelance">Freelance</option>
+                    <option value="Business Profits">Business Profits</option>
+                    <option value="Investment Income">Investment Income</option>
+                    <option value="Income From Rent">Income From Rent</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <span class="types">Freq. Of Payment:</span><select name="frequency">
+                    <option value="Daily">Daily</option>
+                    <option value="Weekly">Weekly</option>
+                    <option value="Monthly">Monthly</option>
+                    <option value="Irregular">Irregular</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Add Details</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashmate-Track Your Bills</title>
+    <link rel="stylesheet" href="static/style1.css">
+    <script src="https://kit.fontawesome.com/7ba314f90c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img src="static/logo.jpg" alt="logo"></li>
+            <li><span>Cashmate</span></li>
+            <li class="mr"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+        </ul>
+        <ul class="ul2">
+            <li><i class="fa-solid fa-right-from-bracket"></i><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+    <div class="manage">
+        <section class="incomeView">
+            <h1>Income</h1>
+            <a href="/addincome">Add Income Details</a>
+            <a href="/viewincome">View Income Details</a>
+        </section>
+        <section class="expenseView">
+            <h1>Expenses</h1>
+            <a href="/addexpense">Add Expense Details</a>
+            <a href="/viewexpense">View Expense Details</a>
+        </section>
+    </div>
+    <div class="budgetCont">
+        <a href="/addbudget">Add Budget</a>
+        <div id="budgetList"></div>
+        <div id="exceed"></div>
+    </div>
+    <div class="savingCont">
+        <a href="/addsavings">Set Saving Goals</a>
+        <div id="savingList"></div>
+        <div id="incomeExceed"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashMate-Add Savings</title>
+    <link rel="stylesheet" href="static/style2.css">
+</head>
+
+<body>
+    <form action="/addsavings" method="post">
+        <div class="completeForm">
+            <div class="form-group">
+                <span class="types">Amount:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="number"
+                    name="amount" placeholder="Enter The Amount(In Rs.)" pattern="[0-9]+(\.[0-9]+)?"
+                    title="Enter Positive Value" required>
+            </div>
+            <div class="form-group">
+                <span
+                    class="types">Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input
+                    type="date" name="sdate" placeholder="Enter Date" required>
+            </div>
+            <div class="form-group">
+                <span class="types">Description:</span><input type="text" name="description"
+                    placeholder="Enter Description" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Add Details</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

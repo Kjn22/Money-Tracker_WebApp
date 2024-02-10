@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CashMate-Add Budget</title>
+    <link rel="stylesheet" href="static/style2.css">
+</head>
+
+<body>
+    <form action="/addbudget" method="post">
+        <div class="completeForm">
+            <div class="form-group">
+                <span class="types">Limit:&nbsp;&nbsp;&nbsp;</span><input type="number" name="limit"
+                    placeholder="Enter The Limit(In Rs.)" pattern="[0-9]+(\.[0-9]+)?" title="Enter Positive Value"
+                    required>
+            </div>
+            <div class="form-group">
+                <span class="types">Date:&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="date" name="bdate"
+                    placeholder="Enter Date" required>
+            </div>
+            <div class="form-group">
+                <span class="types">Budget Category:</span><select name="bcategory">
+                    <option value="Travel And Accommodation">Travel And Accommodation</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Entertainment And Meals">Entertainment And Meals</option>
+                    <option value="Insurance And Interest">Insurance And Interest</option>
+                    <option value="Memberships">Memberships</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Add Details</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

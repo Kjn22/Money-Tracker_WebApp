@@ -1,0 +1,82 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#1a1a40, #4c0027) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /* font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.completeForm {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20vh;
+    padding: 5px;
+    background-color: white;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 30vw;
+}
+
+.btn {
+    font-size: 1.1rem;
+    padding: 5px;
+    margin-right: 1vw;
+    width: 100px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: darkslategrey;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20vw;
+    font-weight: bold;
+}
+
+a:hover {
+    color: darkslategrey;
+}
+
+.wide {
+    width: 50vw;
+}
+
+i {
+    margin-right: 0.5vw;
+    font-size: 1.5rem;
+}
