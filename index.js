@@ -430,7 +430,13 @@ app.post('/addbudget', fetchuser, async (req, res) => {
             limit, bdate, bcategory, user: req.user.id
         })
         const savedBudget = await budget.save()
-        res.send('<script>alert("Details Added Successfully"); window.location.href = "/";</script>')
+        const budgetDate=new Date(bdate)
+        if(budgetDate.getUTCMonth()===moment().month()&&budgetDate.getUTCFullYear()===moment().year()){
+            res.send('<script>alert("Details Added Successfully"); window.location.href = "/";</script>')
+        }
+        else if(budgetDate.getUTCMonth()!==moment().month()||budgetDate.getUTCFullYear()!==moment().year()){
+            res.send('<script>alert("Details Added Successfully But Only Current Month Details Will Be Displayed In Home Page"); window.location.href = "/";</script>')
+        }
     }
     catch (error) {
         console.error(error.message);
@@ -445,7 +451,13 @@ app.post('/addsavings', fetchuser, async (req, res) => {
             amount, sdate, description, user: req.user.id
         })
         const savedSaving = await saving.save()
-        res.send('<script>alert("Details Added Successfully"); window.location.href = "/";</script>')
+        const savingDate=new Date(sdate)
+        if(savingDate.getUTCMonth()===moment().month()&&savingDate.getUTCFullYear()===moment().year()){
+            res.send('<script>alert("Details Added Successfully"); window.location.href = "/";</script>')
+        }
+        else if(savingDate.getUTCMonth()!==moment().month()||savingDate.getUTCFullYear()!==moment().year()){
+            res.send('<script>alert("Details Added Successfully But Only Current Month Details Will Be Displayed In Home Page"); window.location.href = "/";</script>')
+        }
     }
     catch (error) {
         console.error(error.message);

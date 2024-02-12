@@ -159,6 +159,8 @@ section a:hover {
 
 .savingCont {
     height: 40vh;
+    margin-left: 40vh;
+    margin-right: 40vh;
 }
 
 .budgetCont:hover,
